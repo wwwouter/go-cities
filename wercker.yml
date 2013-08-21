@@ -1,5 +1,4 @@
 box: wercker/golangz
-
 build:
   steps:
     - pjvds/setup-go-workspace
