@@ -1,4 +1,4 @@
-box: wercker/golangz
+box: wercker/golang
 build:
   steps:
     - pjvds/setup-go-workspace
@@ -37,7 +37,7 @@ build:
     - script:
         name: Copy output
         code: |-
-          rsync -avz "$WERCKER_SOURCE_DIR/" "$WERCKER_OUTPUT_DIR"
+          rsynsc -avz "$WERCKER_SOURCE_DIR/" "$WERCKER_OUTPUT_DIR"
 
 deploy:
   steps:
