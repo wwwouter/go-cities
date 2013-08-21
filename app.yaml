@@ -1,8 +1,10 @@
-application: deploysteptest
+application: go-cities
 version: 2
 runtime: go
 api_version: go1
 
 handlers:
-- url: .*
+- url: /ping
+  script: _go_app
+- url: /.*
   script: _go_app
