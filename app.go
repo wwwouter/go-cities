@@ -30,3 +30,4 @@ func handleIndex(rw http.ResponseWriter, req *http.Request) {
 func pingHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Pong!")
 }
+
